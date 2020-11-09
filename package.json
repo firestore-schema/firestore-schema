@@ -1,5 +1,5 @@
 {
-  "name": "@firestore-schema/root",
+  "name": "@firestore-schema/firestore-schema",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
