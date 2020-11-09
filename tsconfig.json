@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@firestore-schema/*": ["packages/*/src"]
+    },
+    "jsx": "react",
+    "skipLibCheck": true,
+    "types": []
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

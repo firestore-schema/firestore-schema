@@ -1,2 +1,3 @@
-# cli
-CLI tool for firestore schema
+# firestore schema
+
+Add schema to firestore
