@@ -18,7 +18,7 @@ export const useFirestore = (options: FirebaseOptions) => {
     if (options.emulator) {
       db.settings({
         host: options.emulator,
-        ssl: false
+        ssl: false,
       })
     }
 

@@ -1,5 +1,10 @@
 import * as admin from 'firebase-admin'
-import { document, geoPoint, ref, subCollection } from '../../../src/core/seedHelpers'
+import {
+  document,
+  geoPoint,
+  ref,
+  subCollection,
+} from '../../../src/core/seedHelpers'
 import { convertDocumentToFirestoreData } from '../../../src/lib/utils/convertDocumentToFirestoreData'
 
 admin.initializeApp()

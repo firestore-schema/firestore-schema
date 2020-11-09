@@ -43,7 +43,7 @@ export const collectUserConfig = (): FireseederConfig => {
       : {}),
     ...(process.env.FSSEEDER_EMULATOR
       ? { emulator: process.env.FSSEEDER_EMULATOR }
-      : {}),  
+      : {}),
     ...(process.env.FSSEEDER_ID_KEY
       ? { idKey: process.env.FSSEEDER_ID_KEY }
       : {}),
