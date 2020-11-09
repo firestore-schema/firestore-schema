@@ -1,0 +1,3 @@
+# `@firestore-schema/generator`
+
+## Usage
