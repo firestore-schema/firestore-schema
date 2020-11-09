@@ -24,9 +24,9 @@
     }
   },
   "lint-staged": {
-    "./src/**/*.{js,ts,tsx,json}": [
+    "./src/**/*.{ts,tsx,json}": [
       "eslint --fix",
-      "git add"
+      "prettier --parser typescript --write"
     ]
   },
   "scripts": {

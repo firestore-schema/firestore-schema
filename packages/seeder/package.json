@@ -5,6 +5,7 @@
   "author": "nanopx <0nanopx@gmail.com>",
   "homepage": "https://github.com/firestore-schema/firestore-schema/tree/master/packages/index#readme",
   "license": "MIT",
+  "bin": "dist/cli.js",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
