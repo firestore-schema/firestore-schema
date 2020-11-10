@@ -1,0 +1,101 @@
+{
+  "name": "Test Schema",
+  "version": "1.0.0",
+
+  "collections": {
+    "/users": {
+      "$id": {
+        "auto": true
+      },
+      "$fields": {
+        "firstName": {
+          "type": "String",
+          "required": true,
+          "x-faker": "name.firstName"
+        },
+        "lastName": {
+          "type": "String",
+          "required": true,
+          "x-faker": "name.lastName"
+        },
+        "profile": {
+          "type": "Ref"
+        },
+        "companyGeopoint": {
+          "type": "GeoPoint",
+          "defaultValue": {
+            "lat": 1,
+            "lng": 1
+          }
+        },
+        "arr": {
+          "type": "Array",
+          "children": {
+            "type": "String"
+          },
+          "defaultValue": ["a", "b"]
+        },
+        "map": {
+          "type": "Map",
+          "children": {
+            "a": {
+              "type": "String",
+              "required": true
+            },
+            "b": {
+              "type": "String"
+            },
+            "c": {
+              "type": "Number",
+              "required": true
+            }
+          },
+          "defaultValue": {
+            "a": "aaa",
+            "c": 111
+          }
+        },
+        "deepArrMap": {
+          "type": "Array",
+          "children": {
+            "type": "Map",
+            "children": {
+              "a": {
+                "type": "String",
+                "required": true
+              },
+              "b": {
+                "type": "String"
+              }
+            }
+          },
+          "defaultValue": [{ "a": "foo" }]
+        }
+      },
+      "$subCollections": {
+        "/counters": {
+          "$id": {
+            "auto": false
+          },
+          "$fields": {
+            "count": {
+              "type": "Number"
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "/profiles": {
+    "$id": {
+      "auto": false
+    },
+    "$fields": {
+      "address": {
+        "type": "String",
+        "defaultValue": ""
+      }
+    }
+  }
+}

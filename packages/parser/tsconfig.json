@@ -1,8 +1,11 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "types": ["jest"],
-    "outDir": "./dist"
+    "types": ["jest", "node"],
+    "outDir": "./dist",
+    "plugins": [
+      { "transform": "typescript-is/lib/transform-inline/transformer" }
+    ]
   },
   "include": ["src/**/*"]
 }

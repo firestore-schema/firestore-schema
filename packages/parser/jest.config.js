@@ -5,6 +5,12 @@ const { compilerOptions } = require('../../tsconfig.json')
 module.exports = {
   preset: 'ts-jest',
 
+  globals: {
+    'ts-jest': {
+      compiler: 'ttypescript',
+    },
+  },
+
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
     prefix: '<rootDir>/../../',
   }),
